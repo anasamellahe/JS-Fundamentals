@@ -1,7 +1,6 @@
 const { argv } = require("process")
 let num =  +argv[2]
 
-
 function factorial(num)
 {
     if (isNaN(num))
@@ -9,8 +8,8 @@ function factorial(num)
     else
     {
         let res = 1;
-        for (;num > 0; num--)
-            res *= num
+        for (let i = 1;i <= num; i++)
+            res *= i
         console.log(res) 
     }
 }
