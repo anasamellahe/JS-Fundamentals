@@ -1,8 +1,9 @@
-// const { argv } =  require('node:process');
-const { argv } = require("process");
+const { argv } = require("process")
+const keys = Object.keys(argv)
 
-
-if (Object.keys(argv).length > 2)
-        console.log("Argument found")
+if (keys.length > 3)
+    console.log("Arguments found")
+else if (keys.length > 2)
+    console.log("Argument found")
 else
-    console.log("No argument")
+    console.log("No argument") 
